@@ -1,12 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Shuaib Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
+
 <body>
-    <h1>Hello My name is Shuaib</h1>
-    <p>Welcome to my portfolio website!</p>
-    <h1>Check</h1>
+<nav class="navbar">
+    <div class="nav-content" style="max-width: 100%; margin: 0 auto; padding: 1rem 2rem; display: flex;justify-content: space-between; align-items: center;">
+        <div class="logo">Shuaib</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Experience</a></li>
+            <li><a href="#experience">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="intro_section">
+    <div class="intro_section-content">
+        <h1 class="intro_section-text" style="font-size: 3.5rem; margin-bottom: 1rem;">
+            Hello, I'm <span class="highlight">SHUAIB</span>!<br>
+            Step into my world of creativity and code.
+        </h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shuaib-bin-reza/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Shuaibbinreza" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/shuaib.binreza/" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://x.com/Shuaib_Bin_Reza" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174" alt="Working space" class="intro_section-image"
+         style="height: 500px; width: 500px;">
+</section>
+
+<section id="about" class="about">
+    <div class="about-container" style="display: flex; justify-content: space-between;">
+        <div class="about-image">
+            <img th:src="@{/images/img_1.png}" alt="Shuaib" style="max-height: 500px; width: auto; display: block; margin: 0 auto;">
+        </div>
+        <div class="about-content" style="padding: 10px;">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a passionate developer with expertise in building modern web applications.
+                With a keen eye for design and a love for clean code, I create elegant solutions
+                that make a difference. My journey in tech has been driven by curiosity and a
+                constant desire to learn and grow.
+            </p>
+            <div class="about-details">
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span class="detail-value">Shuaib</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">shuaib6950@gmail.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location:</span>
+                    <span class="detail-value">Dhaka, Bangladesh</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Role:</span>
+                    <span class="detail-value">Junior Software Engineer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills-section">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Skills</h2>
+    <div class="skills-container">
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <span class="badge" style="background-color: #00599C;">
+          <i class="fa-solid fa-code"></i> C++
+        </span>
+
+            <span class="badge" style="background-color: #f89820;">
+          <i class="fa-brands fa-java"></i> Java
+        </span>
+
+            <span class="badge" style="background-color: #f7df1e; color: black;">
+          <i class="fa-brands fa-js"></i> JavaScript
+        </span>
+
+            <span class="badge" style="background-color: #3776ab;">
+          <i class="fa-brands fa-python"></i> Python
+        </span>
+        </div>
+        <div class="skills-category">
+            <h3>Frontend Development</h3>
+            <span class="badge" style="background-color: #e34c26;">
+          <i class="fa-brands fa-html5"></i> HTML
+        </span>
+
+            <span class="badge" style="background-color: #2965f1;">
+          <i class="fa-brands fa-css3-alt"></i> CSS
+        </span>
+
+            <span class="badge" style="background-color: #563d7c;">
+          <i class="fa-brands fa-bootstrap"></i> Bootstrap
+        </span>
+
+            <span class="badge" style="background-color: #0769ad;">
+          <i class="fa-brands fa-js"></i> jQuery
+        </span>
+
+            <span class="badge" style="background-color: #61dafb; color: black;">
+          <i class="fa-brands fa-react"></i> React
+        </span>
+        </div>
+        <div class="skills-category">
+            <h3>Backend Development</h3>
+            <span class="badge" style="background-color: #ff2d20;">
+          <i class="fa-brands fa-laravel"></i> Laravel
+        </span>
+
+            <span class="badge" style="background-color: #6db33f;">
+          <i class="fa-solid fa-leaf"></i> Spring Boot
+        </span>
+        </div>
+        <div class="skills-category">
+            <h3>Database</h3>
+            <span class="badge" style="background-color: #00758f;">
+          <i class="fa-solid fa-database"></i> MySQL
+      </span>
+
+            <span class="badge" style="background-color: #ffca28; color: black;">
+          <i class="fa-solid fa-fire"></i> Firebase
+      </span>
+        </div>
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <span class="badge" style="background-color: #f34f29;">
+          <i class="fa-brands fa-git-alt"></i> Git
+      </span>
+
+            <span class="badge" style="background-color: #181717;">
+          <i class="fa-brands fa-github"></i> GitHub
+      </span>
+        </div>
+        <div class="skills-category">
+            <h3>Others</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: flex; align-items: center; padding: 10px; margin: 5px 0; background: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); width: auto;">
+              <span style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; margin-right: 10px; border-radius: 50%; background-color: #ffcc00; color: black; font-size: 16px;">
+                  <i class="fa-solid fa-lightbulb"></i>
+              </span>
+                    <b>Problem-Solving: </b>&nbsp;Solved 500+ problems in various online judges.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="education">
+    <h2>Work Experience</h2>
+    <div class="education-grid">
+        <div class="education-card">
+            <div class="education-year">December 2023 - Present</div>
+            <h3>Junior Software Engineer</h3>
+            <p class="school-name">Tappware Solutions Limited</p>
+            <p class="education-details">
+            <h3>Responsibilities</h3>
+            <ul>
+                <li>
+                    Developed and optimized interactive front-end features using jQuery, improving responsiveness and user experience.
+                </li>
+                <li>
+                    Refactored the codebase and created reusable methods and classes, improving scalability and maintainability.
+                </li>
+                <li>
+                    Added features like Excel and PDF generation from HTML tables, PDF splitting, streamlining data export and reporting.
+                </li>
+            </ul>
+            </p>
+            <div>
+                <h3>Used Techs and Stacks</h3>
+                <br>
+                <span class="badge" style="background-color: #ff2d20;">
+            <i class="fa-brands fa-laravel"></i> Laravel
+          </span>
+                <span class="badge" style="background-color: #0769ad;">
+            <i class="fa-brands fa-js"></i> jQuery
+          </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="experience" style="text-align: center;">
+    <div style="max-width: 70%; margin: 0 auto;">
+        <h2 style="text-align: center;font-size: 2.5rem; margin-bottom: 3rem;">Education</h2>
+        <div class="timeline" style="text-align: left;">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">January 2020 - April 2023</div>
+                    <h3>BSc in Computer Science and Engineering</h3>
+                    <h4>Daffodil International University</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2015 - 2019</div>
+                    <h3>Diploma in Computer Technology</h3>
+                    <h4>Daffodil Polytechnic Institute</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="achievements" class="achievements-section">
+    <h2>Achievements & Certificates</h2>
+    <div class="achievements-grid">
+        <div class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <h3>21st Century Employability Skilling Program - Advanced (Wadhwani Foundation)
+            </h3>
+            <p class="achievement-date">2023</p>
+            <p class="achievement-details">A training program to enhance Employability skills of freshers</p>
+        </div>
+        <div class="achievement-card">
+            <div class="achievement-icon">📜</div>
+            <h3>Machine Learning under Hire and Train program of Enhancing Digital Government & Economy(EDGE).</h3>
+            <p class="achievement-date">2023</p>
+            <p class="achievement-details">Training program to introduce freshers with machine learning and data processing</p>
+        </div>
+        <div class="achievement-card">
+            <div class="achievement-icon">🎯</div>
+            <h3>Hackathon Winner</h3>
+            <p class="achievement-date">2019</p>
+            <p class="achievement-details">Achieved 5th place for project showcasing in DIU ICT Carnival 2019</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Book-Docket</h3>
+            <p>A Simple crud application to mange personal book collection</p>
+            <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="https://github.com/Shuaibbinreza/Home-Book-Docket" class="project-link">Source Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Movie Sentiment Analysis</h3>
+            <p>Predict positive or negative from a movie review</p>
+            <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="https://github.com/Shuaibbinreza/Sentiment-Analysis-from-Movie-Review" class="project-link">Source Code</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>PI Bazar</h3>
+            <p>A simple ecommerce UI using only html and css</p>
+            <div class="project-links">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="https://github.com/Shuaibbinreza/Pi-Bazar" class="project-link">Source Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <div class="contact-content">
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <textarea id="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/shuaib-bin-reza/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Shuaibbinreza" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/shuaib.binreza/" target="_blank" class="social-link">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://x.com/Shuaib_Bin_Reza" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    <p>&copy; 2025 Shuaib. All rights reserved.</p>
+</footer>
+
+<script th:src="@{/js/main.js}"></script>
 </body>
+
 </html>
